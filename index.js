@@ -28,3 +28,6 @@ const posts = [
     }
 ]
 
+function renderPosts() {
+    
+}
