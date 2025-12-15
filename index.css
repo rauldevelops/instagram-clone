@@ -1,0 +1,70 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    width: 375px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px grey solid;
+}
+
+.logo {
+    width: 127px;
+    margin: 12px;
+}
+
+.profile-pic {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+.user-info-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.user-info p {
+    padding: 0;
+    margin: 0;
+}
+
+.user-full-name {
+    font-weight: bold;
+}
+
+.post-img {
+    width: 100%
+}
+
+.engagement-icon {
+    width: 22px;
+    margin: 10px 5px;
+    padding: 0;
+}
+
+.engagement-icon:hover,
+.engagement-icon:focus {
+    opacity: 50%;
+}
+
+.like-count {
+    margin: 0 8px 6px 8px;
+    font-weight: bold;
+}
+
+.caption {
+    margin: 6px 8px;
+}
+
+.username {
+    font-weight: bold;
+    padding-right: 3px;
+}
