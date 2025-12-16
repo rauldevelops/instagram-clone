@@ -13,10 +13,18 @@
         <title>Oldagram</title>
     </head>
     <body>
-        <nav>
-            <img class="logo" src="images/logo.png" alt="Oldagram logo">
-            <img class="profile-pic" src="images/user-avatar.png" alt="Per's avatar photo">
-        </nav>
+        <header>
+            <nav>
+                <img class="logo" src="images/logo.png" alt="Oldagram logo">
+                <img class="profile-pic" src="images/user-avatar.png" alt="Per's avatar photo">
+            </nav>
+            <form class="new-post-form" id="new-post-form">
+                <label for="new-post-input" class="new-post-label">Create new post</label>
+                <input type="file" id="new-post-input" class="new-post-input" accept="image/*">
+                <button type="submit" class="submit-post-button">Post</button>
+            </form>
+        </header>
+
         <main>
             <section class="user-post">
                 <div class="user-info-container">
