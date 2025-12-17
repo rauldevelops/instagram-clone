@@ -8,6 +8,28 @@ import { posts } from './data.js';
 // comment: "just took a few mushrooms lol",
 // likes: 21
 
+document.getElementById('new-post-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const post = document.getElementById('post-url').value;
+    const comment = document.getElementById('comment').value;
+
+    const newPost = {
+        name: "Raul Crespo",
+        username: "Rarahooray",
+        location: "Miami, FL",
+        avatar: "images/raul-crespo-avatar.jpg",
+        post: post,
+        comment: comment,
+        likes: 0
+    };
+
+    posts.unshift(newPost);
+
+    renderFeed();
+
+    event.target.reset();
+}
 function getPostsHtml() {
     let feedHtml = ``
     posts.forEach((post) => {
