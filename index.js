@@ -11,25 +11,38 @@ import { posts } from './data.js';
 document.getElementById('new-post-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const post = document.getElementById('new-post-input').value;
+    const fileInput = document.getElementById('new-post-input');
     const comment = document.getElementById('caption-input').value;
 
-    const newPost = {
-        name: "Raul Crespo",
-        username: "Rarahooray",
-        location: "Miami, FL",
-        avatar: "images/raul-crespo-avatar.jpg",
-        post: post,
-        comment: comment,
-        likes: 0
-    };
-    console.log(newPost);
-    posts.unshift(newPost);
+    // Check if a file is selected
+    if (fileInput.files && fileInput.files[0]) {
+        const file = fileInput.files[0];
+        const reader = new FileReader();
 
-    renderFeed();
+        // Read the file as a data URL
+        reader.onload = function(e) {
+            const newPost = {
+                name: "Raul Crespo",
+                username: "Rarahooray",
+                location: "Miami, FL",
+                avatar: "images/raul-crespo-avatar.jpeg",
+                post: e.target.result, // Base64 string of the uploaded image
+                comment: comment,
+                likes: 0
+            };
 
-    event.target.reset();
-})
+            console.log("New post submitted:", newPost);
+            posts.unshift(newPost);
+
+            renderFeed();
+            event.target.reset(); // Reset the form
+        };
+
+        reader.readAsDataURL(file); // Trigger the file reading
+    } else {
+        console.error("No file selected for the post.");
+    }
+});
 
 function getPostsHtml() {
     let feedHtml = ``
