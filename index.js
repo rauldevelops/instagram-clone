@@ -11,8 +11,8 @@ import { posts } from './data.js';
 document.getElementById('new-post-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const post = document.getElementById('post-url').value;
-    const comment = document.getElementById('comment').value;
+    const post = document.getElementById('new-post-input').value;
+    const comment = document.getElementById('caption-input').value;
 
     const newPost = {
         name: "Raul Crespo",
@@ -23,13 +23,14 @@ document.getElementById('new-post-form').addEventListener('submit', function(eve
         comment: comment,
         likes: 0
     };
-
+    console.log(newPost);
     posts.unshift(newPost);
 
     renderFeed();
 
     event.target.reset();
-}
+})
+
 function getPostsHtml() {
     let feedHtml = ``
     posts.forEach((post) => {
