@@ -1,0 +1,21 @@
+{
+  "name": "instagram-clone",
+  "version": "1.0.0",
+  "description": "a clone of instagram to practice fullstack dev",
+  "homepage": "https://github.com/rauldevelops/instagram-clone#readme",
+  "bugs": {
+    "url": "https://github.com/rauldevelops/instagram-clone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rauldevelops/instagram-clone.git"
+  },
+  "license": "ISC",
+  "author": "Raul Crespo",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
