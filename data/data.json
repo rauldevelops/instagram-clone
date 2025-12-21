@@ -1,4 +1,4 @@
-export const posts = [
+[
     {
         "nameæ": "Vincent van Gogh",
         "usernameæ": "vincey1853",
