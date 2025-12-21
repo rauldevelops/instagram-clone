@@ -1,8 +1,10 @@
 import http from 'http'
 
-const PORT = 5500
+const PORT = 8000
 
 const __dirname = import.meta.dirname
+
+console.log('__dirname:', __dirname)
 
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
