@@ -1,4 +1,4 @@
-import { posts } from './data.js';
+import { posts } from '../data.js';
 
 // name: "Vincent van Gogh",
 // username: "vincey1853",
