@@ -1,21 +1,21 @@
 [
     {
-        "nameæ": "Vincent van Gogh",
-        "usernameæ": "vincey1853",
-        "locationæ": "Zundert, Netherlands",
-        "avataræ": "images/avatar-vangogh.jpg",
-        "postæ": "images/post-vangogh.jpg",
-        "commentæ": "just took a few mushrooms lol",
+        "name": "Vincent van Gogh",
+        "username": "vincey1853",
+        "location": "Zundert, Netherlands",
+        "avatar": "images/avatar-vangogh.jpg",
+        "post": "images/post-vangogh.jpg",
+        "comment": "just took a few mushrooms lol",
         "likes": 214
     },
     {
-        "nameæ": "Gustave Courbet",
-        "usernameæ": "gus1819",
-        "locationæ": "Ornans, France",
-        "avataræ": "images/avatar-courbet.jpg",
-        "postæ": "images/post-courbet.jpg",
-        "commentæ": "i'm feelin a bit stressed tbh",
-        "likesæ": 480
+        "name": "Gustave Courbet",
+        "username": "gus1819",
+        "location": "Ornans, France",
+        "avatar": "images/avatar-courbet.jpg",
+        "post": "images/post-courbet.jpg",
+        "comment": "i'm feelin a bit stressed tbh",
+        "likes": 480
     },
         {
         "name": "Joseph Ducreux",

@@ -1,4 +1,16 @@
+async function fetchPosts(){
 
+    try {
+       const data = await fetch('http://127.0.0.1:8000/api')
+       const response = await data.json()
+       return JSON.parse(response)
+    } catch(err) {
+        console.log('Error fetching posts:', err)
+    }
+
+}
+
+const posts = await fetchPosts()
 
 // name: "Vincent van Gogh",
 // username: "vincey1853",
