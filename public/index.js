@@ -1,7 +1,7 @@
 async function fetchPosts(){
 
     try {
-       const data = await fetch('http://127.0.0.1:8000/api')
+       const data = await fetch('/api')
        const response = await data.json()
        return JSON.parse(response)
     } catch(err) {
